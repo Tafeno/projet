@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="matrix.css">
+    <title>Matrice</title>
+</head>
+<body>
+ <header>
+    <div class="réglement">
+        <ul>
+            <ol> Veuillez choisir la taille de la matrice carré entre 2 , 3 et 4 </ol>
+            <ol>Remplissez les différentes cases du tableau</ol>
+            <ol>Appuyez sur Somme ou Produit et le résultat de votre action s'affiche directement au dernier tableau</ol>
+        </ul>
+    </div>
+ </header>
+
+    <button class="btn"> <P>Matrice 2*2</P></button>
+    <!------------------------------------------------matrice 2---------------------------------------------> 
+<div class="contenue">
+    <div class="matriceA">
+        
+        <div ><input type="number" id="aa"placeholder="a11"></div>
+        <div ><input type="number" id="ab"placeholder="a12" ></div>
+        <div ><input type="number" id="ba"placeholder="a21"></div>
+        <div ><input type="number" id="bb"placeholder="a22"></div>
+    </div>
+   
+    <div class="matriceB">
+        <div ><input type="number"id="cc"placeholder="b11"></div>
+        <div ><input type="number"id="cd"placeholder="b12"></div>
+        <div ><input type="number"id="dc"placeholder="b21"></div>
+        <div ><input type="number"id="dd"placeholder="b22"></div>
+    </div>
+   <!-------------------------------------------option à choisir---------------------------------------------> 
+<div> 
+   <button onclick="somme()" class="operateur"><h1> somme </h1></button> <br><br>
+    <button onclick="produit()"class="operateur"><h1>produit</h1></button>        
+</div>
+<!-------------------------xxxxxx------option à choisir----xxxxxxxx------------------------------->
+    <div class="matriceC">
+         <div ><input id="ee" placeholder="c11"></div>
+         <div ><input id="ef" placeholder="c21"></div>
+         <div ><input id="fe" placeholder="c12"></div>
+         <div ><input id="ff" placeholder="c22"></div>
+    </div>
+</div>
+ <!--------------------------------xxxxxxxxxx------matrice 2------xxxxxxxxxx----------------------------------> 
+<button class="btn"><p>Matrice 3*3</p></button> 
+<!------------------------------------------------matrice 3---------------------------------------------> 
+<div class="contenue3">
+   
+    <div class="matricea">
+        <div><input type="number"id="aa11"placeholder="a11"></div>
+        <div><input type="number"id="aa12"placeholder="a12"></div>
+        <div><input type="number"id="aa13"placeholder="a13"></div>
+        <div><input type="number"id="aa21"placeholder="a21"></div>
+        <div><input type="number"id="aa22"placeholder="a22"></div>
+        <div><input type="number"id="aa23"placeholder="a23"></div>
+        <div><input type="number"id="aa31"placeholder="a31"></div>
+        <div><input type="number"id="aa32"placeholder="a32"></div>
+        <div><input type="number"id="aa33"placeholder="a33"></div>
+    </div>
+
+         <div class="matriceb">
+            <div><input type="number"id="bb11"placeholder="b11"></div>
+            <div><input type="number"id="bb12"placeholder="b12"></div>
+            <div><input type="number"id="bb13"placeholder="b13"></div>
+            <div><input type="number"id="bb21"placeholder="b21"></div>
+            <div><input type="number"id="bb22"placeholder="b22"></div>
+            <div><input type="number"id="bb23"placeholder="b23"></div>
+            <div><input type="number"id="bb31"placeholder="b31"></div>
+            <div><input type="number"id="bb32"placeholder="b32"></div>
+            <div><input type="number"id="bb33"placeholder="b33"></div>
+         </div>
+            <div> 
+                <button onclick="fusion()" class="operateur"><h1> somme </h1></button> <br><br>
+                <button onclick="anicet()"class="operateur"><h1>produit</h1></button>        
+            </div>
+         <div class="matricec">
+                 <div><input id="cc11"placeholder="c11"></div>
+                 <div><input id="cc12"placeholder="c11"></div>
+                 <div><input id="cc13"placeholder="c13"></div>
+                 <div><input id="cc21"placeholder="c21"></div>
+                 <div><input id="cc22"placeholder="c22"></div>
+                 <div><input id="cc23"placeholder="c23"></div>
+                 <div><input id="cc31"placeholder="c31"></div>
+                 <div><input id="cc32"placeholder="c32"></div>
+                 <div><input id="cc33"placeholder="c33"></div>  
+    </div>
+ </div>
+ <!------------------------------xxxxxxxxxx-----matrice 3----xxxxxxxx-----------------------------------------> 
+ <button class="btn"><p>Matrice 4*4</p></button>
+ <!------------------------------------------------matrice 4---------------------------------------------> 
+ 
+<div class="contenue4">
+    <div class="matriced">
+        <div ><input type="number"id="a11" placeholder="a11"></div>
+        <div ><input type="number"id="a12" placeholder="a12"></div>
+        <div ><input type="number"id="a13" placeholder="a13"></div>
+        <div ><input type="number"id="a14" placeholder="a14"></div>
+        <div ><input type="number"id="a21" placeholder="a21"></div>
+        <div ><input type="number"id="a22" placeholder="a22"></div>
+        <div ><input type="number"id="a23" placeholder="a23"></div>
+        <div ><input type="number"id="a24" placeholder="a24"></div>
+        <div ><input type="number"id="a31" placeholder="a31"></div>
+        <div ><input type="number"id="a32" placeholder="a32"></div>
+        <div ><input type="number"id="a33" placeholder="a33"></div>
+        <div ><input type="number"id="a34" placeholder="a34"></div>
+        <div ><input type="number"id="a41" placeholder="a41"></div>
+        <div ><input type="number"id="a42" placeholder="a42"></div>
+        <div ><input type="number"id="a43" placeholder="a43"></div>
+        <div ><input type="number"id="a44" placeholder="a44"></div>
+    </div>
+<div class="matricef">
+        <div ><input type="number"id="b11" placeholder="b11"></div>
+        <div ><input type="number"id="b12" placeholder="b12"></div>
+        <div ><input type="number"id="b13" placeholder="b13"></div>
+        <div ><input type="number"id="b14" placeholder="b14"></div>
+        <div ><input type="number"id="b21" placeholder="b21"></div>
+        <div ><input type="number"id="b22" placeholder="b22"></div>
+        <div ><input type="number"id="b23" placeholder="b23"></div>
+        <div ><input type="number"id="b24" placeholder="b24"></div>
+        <div ><input type="number"id="b31" placeholder="b31"></div>
+        <div ><input type="number"id="b32" placeholder="b32"></div>
+        <div ><input type="number"id="b33" placeholder="b33"></div> 
+        <div ><input type="number"id="b34" placeholder="b34"></div> 
+        <div ><input type="number"id="b41" placeholder="b41"></div>
+        <div ><input type="number"id="b42" placeholder="b42"></div>
+        <div ><input type="number"id="b43" placeholder="b43"></div>
+        <div ><input type="number"id="b44" placeholder="b44"></div>
+    </div> 
+<div> 
+     <button onclick="sylvio()" class="operateur"><h1> somme </h1></button> <br><br>
+     <button onclick="multiplier()"class="operateur"><h1>produit</h1></button>        
+</div>
+<div class="matriceg">
+        <div ><input id="c11" placeholder="c11"></div>
+        <div ><input id="c12" placeholder="c12"></div>
+        <div ><input id="c13" placeholder="c13"></div>
+        <div ><input id="c14" placeholder="c14"></div>
+        <div ><input id="c21" placeholder="c21"></div>
+        <div ><input id="c22" placeholder="c22"></div>
+        <div ><input id="c23" placeholder="c23"></div>
+        <div ><input id="c24" placeholder="c24"></div>
+        <div ><input id="c31" placeholder="c31"></div>
+        <div ><input id="c32" placeholder="c32"></div>
+        <div ><input id="c33" placeholder="c33"></div>
+        <div ><input id="c34" placeholder="c34"></div>
+        <div ><input id="c41" placeholder="c41"></div>
+        <div ><input id="c42" placeholder="c42"></div>
+        <div ><input id="c43" placeholder="c43"></div>
+        <div ><input id="c44" placeholder="c44"></div>
+    </div>
+ </div>
+ <!----------------------javascript pour afficher le matrice-------------------------------------------------->
+ <Script type="text/javascript"src="matrux.js"></Script>
+ <!------------------xxxxxxxx----javascript pour afficher le matrice------xxxxxxxx--------------------------------------------->
+</body>
+</html>
